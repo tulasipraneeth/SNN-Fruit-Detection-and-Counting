@@ -1,119 +1,188 @@
-# SNN-Fruit-Detection-and-Counting
+# 🍎 SNN-Fruit-Detection-and-Counting
 
-# 🍎 Fruit Detection and Counting Using Spiking Neural Networks (SNN)
+A futuristic AI-powered system for detecting and counting apples using **Spiking Neural Networks (SNN)**.  
+It supports both:
 
-This project uses **Spiking Neural Networks (SNN)** to detect and count apples in video frames. It is implemented in a Jupyter notebook (`mini.ipynb`) and runs on Google Colab. The system processes each frame of the video, converts it into spike-based data, detects apples using an SNN model, and outputs a final video with bounding boxes and a count of detected apples.
+- 🧠 `mini.ipynb`: Neuromorphic detection in Google Colab (Jupyter Notebook)
+- 🌐 `app.py`: Interactive Web App with Streamlit and futuristic UI
 
 ---
 
 ## 🧠 Key Features
 
-- 🧩 Spike-based image processing using **SpikingJelly**
-- 🧠 Neuromorphic apple detection using **Spiking Neural Networks**
-- 📹 Video frame extraction and apple detection using OpenCV
-- 🧮 Duplicate removal for accurate apple counting
-- 📊 Frame-wise and total apple count output
-- 💾 Final video output with bounding boxes and labels
+- 🧩 Spike-based image encoding using SpikingJelly & snnTorch
+- 📹 Video frame extraction & apple detection via OpenCV
+- 🔁 Duplicate removal for accurate counting
+- 🧮 Frame-wise and total apple count display
+- 💾 Final video output with bounding boxes & labels
+- 🎨 Futuristic 3D animated UI with light/dark mode
+- ⏱️ Real-time processing progress bar
 
 ---
 
 ## 🚀 Tech Stack
 
-- Python 3.x
-- Google Colab
-- SpikingJelly
-- OpenCV
-- NumPy
-- Matplotlib
-- PyTorch
+| Component | Description |
+|----------|-------------|
+| 🧠 Model | Spiking Neural Network (Leaky Integrate-and-Fire) |
+| 📊 Frameworks | PyTorch, snnTorch, OpenCV, NumPy, SciPy |
+| 📘 Notebook | Google Colab (`mini.ipynb`) |
+| 🌐 Web App | Streamlit (`app.py`) with advanced UI |
 
 ---
 
 ## 📁 Folder Structure
 
 .
-├── mini.ipynb          # Main notebook
-├── /frames             # (Optional) Video frames (auto-generated)
-├── /outputs            # Output videos/images (auto-generated)
+├── mini.ipynb          # Jupyter Notebook for detection in Colab
+├── app.py              # Streamlit-based web UI
+├── requirements.txt    # Dependencies for app.py
 ├── README.md           # Project documentation
+├── /outputs            # Output videos (auto-generated)
 
 ---
 
 ## ⚙️ Setup & Installation
 
-1. Clone the repository:
+### 🔬 For Notebook (`mini.ipynb`)
 
-   git clone [https://github.com/your-username/SNN-Fruit-Detection-and-Counting.git
-   cd SNN-Fruit-Detection-and-Counting](https://github.com/tulasipraneeth/SNN-Fruit-Detection-and-Counting.git)
+1. Clone the repo or open on Colab:
+
+   ```bash
+   git clone https://github.com/tulasipraneeth/SNN-Fruit-Detection-and-Counting.git
+   cd SNN-Fruit-Detection-and-Counting
+   ```
 
 2. Open `mini.ipynb` in **Google Colab**
 
-3. Install the required dependencies inside the notebook:
+3. Install dependencies inside the notebook:
 
+   ```python
    !pip install -q spikingjelly opencv-python-headless matplotlib
+   ```
 
-4. Upload your apple orchard video (.mp4) and run all cells.
+4. Upload your `.mp4` apple orchard video and run all cells.
+
+---
+
+### 🌐 For Web App (`app.py`)
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/tulasipraneeth/SNN-Fruit-Detection-and-Counting.git
+   cd SNN-Fruit-Detection-and-Counting
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Streamlit app:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+4. Open browser at `http://localhost:8501`
+
+---
+
+## 🖼️ UI Preview
+
+> Add screenshots or videos in `/assets` folder  
+> Example:
+
+![demo](assets/ai-snn-ui-demo.gif)
 
 ---
 
 ## 📈 Sample Output
 
-- Real-time apple detection in frames
-- Bounding boxes drawn on each apple
-- Total apple count displayed per frame and at the end
+Frame 1: 7 apples detected  
+Frame 2: 6 apples detected  
+...  
+Total apples: 58 (duplicates removed)
 
-Example output snippet:
-
-   Frame 1: 7 apples detected
-   Frame 2: 6 apples detected
-   ...
-   Total apples: 58 (duplicates removed)
-
-> (Optional) Add result images or videos in an `assets/` folder and update here.
+Output video includes:
+- 🟩 Bounding boxes
+- 🍏 Confidence scores
+- 🧮 Live frame count
 
 ---
 
-## 📌 Dataset
+## 🧪 Dataset Support
 
-Supported:
-- Monastery Apple Dataset (MAD)
-- Custom orchard videos (.mp4 format)
+Supports:
+- ✅ Monastery Apple Dataset (MAD)
+- ✅ Any custom `.mp4` orchard videos
 
-Replace the input video in the notebook with any orchard footage.
+Just upload/replace your video to begin.
 
 ---
 
-## ✅ Output
+## 🧩 Customization Options
 
-- Final video with apples outlined and counted
-- Printed frame-wise and total apple count
+| Feature           | Supported |
+|------------------|-----------|
+| Frame resolution | ✅ Scalable |
+| Model threshold  | ✅ Adjustable |
+| UI theme toggle  | ✅ Light/Dark |
+| Live chart       | ✅ Frame-wise apple count |
+| Auto de-duplication | ✅ Yes |
+
+---
+
+## 🧠 Future Enhancements
+
+- 🔁 Live camera feed (real-time orchard detection)
+- 💬 Audio alerts for every detection
+- 📊 Apple size or ripeness estimation
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repo, improve the model, clean the code, or enhance the UI.
+Contributions welcome!  
+You can:
+- Improve detection logic
+- Enhance UI animations
+- Add new datasets
+- Optimize spike encoding
+
+To contribute:
+
+```bash
+fork → edit → pull request ✅
+```
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute with attribution.
+Licensed under the **MIT License**  
+Free to use, distribute, and modify with attribution.
 
 ---
 
 ## 🙏 Acknowledgements
 
-- SpikingJelly for SNN frameworks
-- MAD Dataset contributors
-- Google Colab for compute resources
+- 🧠 SpikingJelly
+- 🍎 MAD Apple Dataset
+- 🚀 Streamlit
+- 💻 Google Colab
 
 ---
 
-## 📬 Contact
+## 👤 Author & Contact
 
 **Mukka Tulasipraneeth**  
 📧 mukkatulasipraneeth@example.com  
-🔗 [https://www.linkedin.com/in/tulasipraneeth](https://www.linkedin.com/in/mukka-tulasipraneeth-34417028a/)
+🔗 [LinkedIn](https://www.linkedin.com/in/mukka-tulasipraneeth-34417028a/)  
+🐙 [GitHub](https://github.com/tulasipraneeth/SNN-Fruit-Detection-and-Counting)
 
+---
+
+> ⭐ If you like this project, give it a star on GitHub!
