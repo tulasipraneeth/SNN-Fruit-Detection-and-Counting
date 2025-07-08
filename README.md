@@ -115,5 +115,5 @@ Feel free to use, modify, and distribute with attribution.
 
 **Mukka Tulasipraneeth**  
 📧 mukkatulasipraneeth@example.com  
-🔗 https://www.linkedin.com/in/tulasipraneeth
+🔗 [https://www.linkedin.com/in/tulasipraneeth](https://www.linkedin.com/in/mukka-tulasipraneeth-34417028a/)
 
