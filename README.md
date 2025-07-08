@@ -43,8 +43,8 @@ This project uses **Spiking Neural Networks (SNN)** to detect and count apples i
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/SNN-Fruit-Detection-and-Counting.git
-   cd SNN-Fruit-Detection-and-Counting
+   git clone [https://github.com/your-username/SNN-Fruit-Detection-and-Counting.git
+   cd SNN-Fruit-Detection-and-Counting](https://github.com/tulasipraneeth/SNN-Fruit-Detection-and-Counting.git)
 
 2. Open `mini.ipynb` in **Google Colab**
 
